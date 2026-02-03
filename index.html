@@ -272,12 +272,12 @@
           <button onclick="closeExp()" class="absolute top-6 right-6 text-xs uppercase font-bold tracking-widest hover:text-red-500 transition-colors">[ Fechar ]</button>
           <h2 class="font-title neon text-5xl md:text-7xl mb-12 uppercase text-[#fafb00]">Clientes Anteriores</h2>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-              <div class="client-item flex flex-col items-center"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@mandala_360</span></div>
-              <div class="client-item flex flex-col items-center"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@douglasmassoterapeuta</span></div>
-              <div class="client-item flex flex-col items-center"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=200" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@thiagocadetecerimonial</span></div>
-              <div class="client-item flex flex-col items-center"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@mentesa_psi</span></div>
-              <div class="client-item flex flex-col items-center"><img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=200" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@eusoutopfitness</span></div>
-              <div class="client-item flex flex-col items-center"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@crossfitpajucara</span></div>
+              <div class="client-item flex flex-col items-center"><img src="./img/Clientes/mandala360_.jpg" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@mandala_360</span></div>
+              <div class="client-item flex flex-col items-center"><img src="./img/Clientes/douglasmassoterapeutamaceio.jpg" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@douglasmassoterapeutamaceio</span></div>
+              <div class="client-item flex flex-col items-center"><img src="./img/Clientes/thiagocadetecerimonial.jpg" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@thiagocadetecerimonial</span></div>
+              <div class="client-item flex flex-col items-center"><img src="./img/Clientes/psi_mentesa.jpg" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@psi_mentesa</span></div>
+              <div class="client-item flex flex-col items-center"><img src="./img/Clientes/eusoutopfitness.jpg" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@eusoutopfitness</span></div>
+              <div class="client-item flex flex-col items-center"><img src="./img/Clientes/crossfitpajucara.jpg" alt="Cliente" class="client-avatar"><span class="text-xs tracking-wider opacity-80">@crossfitpajucara</span></div>
           </div>
           <p class="text-sm text-gray-500 italic mt-16 border-t border-white/10 pt-8">E muitos outros projetos incríveis...</p>
       </div>
@@ -291,8 +291,12 @@
           <span id="case-category" class="text-[#fafb00] text-xs tracking-[0.3em] uppercase block mb-4">CATEGORIA</span>
           <h2 id="case-title" class="font-title text-4xl md:text-6xl mb-8 leading-[0.9]">Nome do Projeto</h2>
           
-          <img id="case-main-img" src="" class="w-full h-[300px] object-cover rounded-lg mb-8 opacity-80 border border-white/10">
-          
+          <img id="case-main-img" src="" class="hidden w-full h-[300px] object-cover rounded-lg mb-8 opacity-80 border border-white/10">
+
+          <video id="case-main-video" class="hidden w-full h-[300px] object-cover rounded-lg mb-8 opacity-80 border border-white/10" controls playsinline loop muted autoplay>
+            <source id="case-video-src" src="" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="col-span-2">
               <h4 class="font-title text-xl mb-4 text-[#fafb00]">O DESAFIO</h4>
@@ -351,9 +355,9 @@
           <div class="flex gap-4 md:gap-6 service-item group">
             <span class="font-title number-glow italic text-5xl md:text-7xl text-white group-hover:text-yellow-300 transition-colors">02</span>
             <div>
-              <h3 class="font-title text-xl md:text-2xl mb-2 cursor-pointer text-white group-hover:text-yellow-300 transition-colors" onclick="openHub('02')">SOCIAL MEDIA & CONTEÚDO</h3>
+              <h3 class="font-title text-xl md:text-2xl mb-2 cursor-pointer text-white group-hover:text-yellow-300 transition-colors" onclick="openHub('02')">COMUNICAÇÃO DE PROJETOS</h3>
               <p class="text-sm md:text-base text-white/80 leading-relaxed">
-                Gestão de redes sociais, publicação, interação com a comunidade e criação de conteúdos para feed, stories e reels.
+                Gestão e produção de comunicação para projetos pontuais, culturais e institucionais, com foco em narrativa, presença digital e execução alinhada ao contexto de cada ação.
               </p>
               <div onclick="openHub('02')" class="mt-4 text-[10px] font-bold tracking-[0.2em] uppercase text-white/50 hover:text-[#fafb00] transition-colors cursor-pointer inline-flex items-center gap-2">
                 Saiba mais <span>→</span>
@@ -402,7 +406,7 @@
       <div id="hub-text" class="text-sm leading-relaxed space-y-6 text-gray-800 font-light"></div>
 
       <div id="mobile-feed-area" class="md:hidden mt-12 pt-12 border-t border-gray-200">
-          <h4 class="text-black/40 text-[10px] tracking-[0.4em] uppercase mb-6">Cases relacionados</h4>
+          <h4 class="text-black/40 text-[10px] tracking-[0.4em] uppercase mb-6">Referências do Trabalho</h4>
           <div id="mobile-hub-feed"></div>
       </div>
 
@@ -411,7 +415,7 @@
 
   <div id="hub-overlay" class="fixed inset-0 bg-black/80 z-[200] opacity-0 pointer-events-none transition-all duration-700 backdrop-blur-md flex justify-end items-center p-6 md:p-20">
     <div id="feed-container" class="w-full md:w-[calc(100%-500px)] h-full overflow-y-auto opacity-0 translate-y-10 transition-all duration-1000 delay-300">
-      <h4 class="text-white/40 text-[10px] tracking-[0.4em] uppercase mb-8 ml-4">Cases relacionados</h4>
+      <h4 class="text-white/40 text-[10px] tracking-[0.4em] uppercase mb-8 ml-4">Referências do Trabalho</h4>
       <div id="hub-feed" class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6"></div>
     </div>
     <div class="absolute inset-0 z-[-1]" onclick="closeHub()"></div>
@@ -429,9 +433,9 @@
        <div class="portfolio-card sticky top-24 md:top-32 bg-[#151515] border border-white/10 rounded-t-[30px] md:rounded-t-[40px] shadow-2xl p-6 md:p-12 h-[60vh] md:h-[70vh] flex flex-col md:flex-row gap-6 md:gap-10">
          <div class="md:w-1/2 flex flex-col justify-center">
            <span class="font-script text-yellow-400 text-3xl block mb-2">01.</span>
-           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Cliente Solar Coca-Cola</h3>
-           <p class="text-gray-400 mb-6 text-sm md:text-base">Atuei na roteirização, direção e coordenação do vídeo institucional da Solar Coca-Cola pela Mandala 360. O foco foi comunicar de forma clara e humana um projeto de inovação social e sustentabilidade voltado a jovens da rede pública em Maceió.</p>
-           <button onclick="openCase('alpha')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
+           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Solar Coca-Cola — Projeto Hortas Hidropônicas</h3>
+           <p class="text-gray-400 mb-6 text-sm md:text-base">Planejamento de conteúdo • Roteiro • Direção de captação • Coordenação de produção audiovisual</p>
+           <button onclick="openCase('solarcoca')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
          </div>
          <div class="md:w-1/2 bg-[#222] rounded-xl overflow-hidden h-40 md:h-auto">
             <img src="https://investindoporai.com.br/wp-content/uploads/2024/01/solar-coca-cola-logo.png" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
@@ -441,24 +445,48 @@
        <div class="portfolio-card sticky top-28 md:top-40 bg-[#1a1a1a] border border-white/10 rounded-t-[30px] md:rounded-t-[40px] shadow-[0_-10px_40px_rgba(0,0,0,0.5)] p-6 md:p-12 h-[60vh] md:h-[70vh] flex flex-col md:flex-row gap-6 md:gap-10">
          <div class="md:w-1/2 flex flex-col justify-center">
            <span class="font-script text-yellow-400 text-3xl block mb-2">02.</span>
-           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Projeto Casa Aberta</h3>
-           <p class="text-gray-400 mb-6 text-sm md:text-base">Fui responsável pelo planejamento de comunicação, redes sociais e produção do festival Casa Aberta, unindo estratégia digital e execução técnica para promover a cultura e a acessibilidade em Alagoas.</p>
-           <button onclick="openCase('beta')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
+           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Casa Aberta — Festival de Cultura e Acessibilidade</h3>
+           <p class="text-gray-400 mb-6 text-sm md:text-base">Planejamento de comunicação • Gestão de redes sociais • Produção de conteúdo • Apoio à produção do evento</p>
+           <button onclick="openCase('casaaberta')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
          </div>
          <div class="md:w-1/2 bg-[#333] rounded-xl overflow-hidden h-40 md:h-auto">
-            <img src="./img/Casa-Aberta.png" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            <img src="./img/Projetos/Casa Aberta.JPEG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
          </div>
        </div>
 
        <div class="portfolio-card sticky top-32 md:top-48 bg-[#202020] border border-white/10 rounded-t-[30px] md:rounded-t-[40px] shadow-[0_-10px_40px_rgba(0,0,0,0.5)] p-6 md:p-12 h-[60vh] md:h-[70vh] flex flex-col md:flex-row gap-6 md:gap-10">
          <div class="md:w-1/2 flex flex-col justify-center">
            <span class="font-script text-yellow-400 text-3xl block mb-2">03.</span>
-           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Projeto</h3>
-           <p class="text-gray-400 mb-6 text-sm md:text-base">Placeholder.</p>
-           <button onclick="openCase('gamma')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
+           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Marta Arruda — Exposição 40 Anos de Carreira</h3>
+           <p class="text-gray-400 mb-6 text-sm md:text-base">Planejamento de comunicação • Gestão de redes sociais • Produção de conteúdo • Divulgação cultural</p>
+           <button onclick="openCase('martaarruda')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
          </div>
          <div class="md:w-1/2 bg-[#333] rounded-xl overflow-hidden h-40 md:h-auto">
-            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+            <img src="./img/Projetos/Marta Arruda.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+         </div>
+       </div>
+
+       <div class="portfolio-card sticky top-32 md:top-48 bg-[#202020] border border-white/10 rounded-t-[30px] md:rounded-t-[40px] shadow-[0_-10px_40px_rgba(0,0,0,0.5)] p-6 md:p-12 h-[60vh] md:h-[70vh] flex flex-col md:flex-row gap-6 md:gap-10">
+         <div class="md:w-1/2 flex flex-col justify-center">
+           <span class="font-script text-yellow-400 text-3xl block mb-2">04.</span>
+           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Ateliê Xica Manicongo</h3>
+           <p class="text-gray-400 mb-6 text-sm md:text-base">Planejamento de comunicação • Gestão de redes sociais • Cobertura mobile • Produção de conteúdo em tempo real</p>
+           <button onclick="openCase('xicamanicongo')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
+         </div>
+         <div class="md:w-1/2 bg-[#333] rounded-xl overflow-hidden h-40 md:h-auto">
+            <img src="./img/Projetos/IMG_2066.HEIC" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+         </div>
+       </div>
+
+       <div class="portfolio-card sticky top-32 md:top-48 bg-[#202020] border border-white/10 rounded-t-[30px] md:rounded-t-[40px] shadow-[0_-10px_40px_rgba(0,0,0,0.5)] p-6 md:p-12 h-[60vh] md:h-[70vh] flex flex-col md:flex-row gap-6 md:gap-10">
+         <div class="md:w-1/2 flex flex-col justify-center">
+           <span class="font-script text-yellow-400 text-3xl block mb-2">05.</span>
+           <h3 class="font-title text-3xl md:text-5xl uppercase text-white mb-4">Mandala das Diversidades — Projeto Cultural</h3>
+           <p class="text-gray-400 mb-6 text-sm md:text-base">Produção de conteúdo • Roteirização • Coordenação de projeto • Comunicação cultural • Gestão de narrativa</p>
+           <button onclick="openCase('mandaladiversidades')" class="text-white text-xs tracking-[0.2em] border-b border-white/30 self-start pb-1 uppercase hover:border-yellow-400 hover:text-yellow-400 transition-colors">Ver Case</button>
+         </div>
+         <div class="md:w-1/2 bg-[#333] rounded-xl overflow-hidden h-40 md:h-auto">
+            <img src="./img/Projetos/Mandala Diversidades.jpeg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
          </div>
        </div>
     </div>
@@ -516,60 +544,104 @@
 
     /* ================= FUNÇÕES DOS CASES (PORTFÓLIO) ================= */
     const projectData = {
-      'alpha': {
+      'solarcoca': {
         category: "Audiovisual",
-        title: "CLIENTE SOLAR COCA-COLA",
+        title: "Solar Coca-Cola — Projeto Hortas Hidropônicas",
         img: "https://investindoporai.com.br/wp-content/uploads/2024/01/solar-coca-cola-logo.png",
-        desc: "Enquanto produtor de conteúdo na Mandala 360 Live Marketing, atuei na produção de um vídeo institucional para a Solar Coca-Cola em Maceió (AL). A empresa nos procurou para comunicar um projeto de impacto social desenvolvido com crianças e adolescentes da rede pública de ensino, voltado à educação, sustentabilidade e inovação por meio de hortas hidropônicas.",
-        solution: "Minha atuação envolveu a roteirização do projeto audiovisual, a direção no dia da captação e a coordenação da equipe responsável pela execução. O objetivo foi transformar uma iniciativa técnica e educativa em uma narrativa clara, sensível e acessível, capaz de traduzir o impacto do projeto e sua relevância social de forma genuína e bem estruturada.",
+        video: "./img/Projetos/Mandala - Solar Coca-Cola- Horta (SHORT).mp4",
+        desc: "A Solar Coca-Cola precisava comunicar um projeto integrante de sua campanha de ESG, voltado à promoção de alimentação saudável, educação ambiental e impacto social junto a crianças e adolescentes da rede pública de ensino.",
+        solution: "Atuei na concepção criativa do projeto audiovisual, sendo responsável pela roteirização do vídeo institucional, direção no dia da captação e coordenação da equipe de produção. O foco foi transformar uma iniciativa técnica em uma narrativa clara, sensível e acessível, capaz de evidenciar o impacto social e educativo do projeto.",
         client: "Solar Coca-Cola",
         year: "2025",
-        services: "Roteiro, Produção, Direção"
+        services: "Planejamento de conteúdo • Roteiro • Direção de captação • Coordenação de produção audiovisual"
       },
-      'beta': {
+      'casaaberta': {
         category: "Eventos",
-        title: "CASA ABERTA",
-        img: "./img/Casa-Aberta.png",
-        desc: "No projeto Casa Aberta, primeiro festival de cultura e acessibilidade de Alagoas, atuei no planejamento de comunicação, na gestão das redes sociais e na produção geral do evento, desenvolvido pela Produtora Sambacaitá. A iniciativa reuniu arte, cultura e acessibilidade, criando um espaço de troca, visibilidade e inclusão.",
-        solution: "Minha atuação envolveu desde a organização da comunicação digital e estratégia de conteúdo até o apoio direto à produção do evento, integrando planejamento, execução e registro para traduzir o propósito e o impacto do festival de forma clara, sensível e alinhada ao seu caráter social.",
-        client: "Casa Sambacaitá",
+        title: "Casa Aberta — Festival de Cultura e Acessibilidade",
+        img: "./img/Projetos/Casa Aberta.MP4",
+        desc: "Comunicar o primeiro festival de cultura e acessibilidade do Nordeste, voltado prioritariamente para pessoas com deficiência, garantindo visibilidade, engajamento e alinhamento entre propósito social, programação e público.",
+        solution: "Atuei no planejamento da comunicação, na gestão das redes sociais e na produção geral do evento. Minha atuação integrou estratégia digital, execução de conteúdo e apoio à produção, assegurando que a comunicação acompanhasse todas as etapas do festival e traduzisse seu impacto cultural e social de forma coerente e acessível.",
+        client: "Produtora Sambacaitá",
         year: "2025",
-        services: "Comunicação, Cobertura, Produção"
+        services: "Planejamento de comunicação • Gestão de redes sociais • Produção de conteúdo • Apoio à produção do evento"
       },
-      'gamma': {
+      'martaarruda': {
         category: "Audiovisual",
-        title: "PROJETO",
-        img: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071",
-        desc: "Placeholder.",
-        solution: "Placeholder.",
-        client: "Placeholder",
-        year: "2026",
-        services: "Roteiro, Captação, Edição"
+        title: "Marta Arruda — Exposição 40 Anos de Carreira",
+        img: "./img/Projetos/Marta Arruda.jpeg",
+        desc: "Celebrar os 40 anos de carreira da artista plástica alagoana Marta Arruda por meio de uma exposição realizada no Rio de Janeiro, ampliando o alcance da sua trajetória artística para um novo público e contexto cultural.",
+        solution: "Fui responsável pelo planejamento e execução da comunicação digital da exposição, com foco na divulgação para o público do Rio de Janeiro. O trabalho buscou contextualizar a trajetória da artista, destacar a relevância de sua obra e posicionar a exposição como um marco na sua carreira.",
+        client: "Marta Arruda",
+        year: "2024",
+        services: "Planejamento de comunicação • Gestão de redes sociais • Produção de conteúdo • Divulgação cultural"
+      },
+      'xicamanicongo': {
+        category: "Comunicação",
+        title: "Ateliê Xica Manicongo — Comunicação de Evento",
+        img: "./img/Projetos/IMG_2066.HEIC",
+        desc: "Dar visibilidade a um ateliê de cinema movimentado por pessoas trans no cenário audiovisual alagoano, fortalecendo sua presença digital e ampliando o alcance do evento realizado pelo projeto.",
+        solution: "Fui responsável pela comunicação do evento, atuando no planejamento dos conteúdos, na gestão das redes sociais e na cobertura mobile em tempo real. O trabalho priorizou uma narrativa respeitosa, potente e alinhada à identidade do ateliê e à importância do projeto para o cinema e a cultura local.",
+        client: "Ateliê Xica Manicongo",
+        year: "2024",
+        services: "Planejamento de comunicação • Gestão de redes sociais • Cobertura mobile • Produção de conteúdo em tempo real"
+      },
+      'mandaladiversidades': {
+        category: "Audiovisual",
+        title: "Mandala das Diversidades — Projeto Cultural",
+        img: "./img/Projetos/Mandala Diversidades.jpeg",
+        video: "./img/Projetos/ManiDoc - Mandala das Diversidades v5.mp4",
+        desc: "Comunicar e estruturar um projeto cultural voltado à diversidade, com foco na valorização de corpos, identidades e narrativas historicamente invisibilizadas, garantindo visibilidade, coerência conceitual e alcance para diferentes públicos.",
+        solution: "Atuei na produção, roteirização e coordenação do projeto Mandala das Diversidades, acompanhando todas as etapas da construção da comunicação. O trabalho envolveu desde a organização da narrativa até a execução dos conteúdos, conectando propósito, estética e impacto social de forma clara e consistente.",
+        client: "Mandala 360 Live Marketing",
+        year: "2024",
+        services: "Produção de conteúdo • Roteirização • Coordenação de projeto • Comunicação cultural • Gestão de narrativa"
       }
     };
 
     function openCase(id) {
-        const data = projectData[id];
-        if(!data) return;
+      const data = projectData[id];
+      if(!data) return;
 
-        // Popula os dados
-        document.getElementById('case-category').innerText = data.category;
-        document.getElementById('case-title').innerText = data.title;
-        document.getElementById('case-main-img').src = data.img;
-        document.getElementById('case-desc').innerText = data.desc;
-        document.getElementById('case-solution').innerText = data.solution;
-        document.getElementById('case-client').innerText = data.client;
-        document.getElementById('case-year').innerText = data.year;
-        document.getElementById('case-services').innerText = data.services;
+      // Elementos de Texto (iguais ao anterior)
+      document.getElementById('case-category').innerText = data.category;
+      document.getElementById('case-title').innerText = data.title;
+      document.getElementById('case-desc').innerText = data.desc;
+      document.getElementById('case-solution').innerText = data.solution;
+      document.getElementById('case-client').innerText = data.client;
+      document.getElementById('case-year').innerText = data.year;
+      document.getElementById('case-services').innerText = data.services;
 
-        const overlay = document.getElementById('case-overlay');
-        const card = document.getElementById('case-card');
-        
-        overlay.style.visibility = 'visible';
-        gsap.to(overlay, { opacity: 1, duration: 0.4 });
-        gsap.fromTo(card, { y: 50, opacity: 0, scale: 0.95 }, { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: "power4.out" });
-        document.body.style.overflow = 'hidden'; 
-    }
+      // Lógica de Mídia (NOVO)
+      const imgEl = document.getElementById('case-main-img');
+      const videoEl = document.getElementById('case-main-video');
+      const videoSrc = document.getElementById('case-video-src');
+
+      if (data.video) {
+          // Se tiver vídeo:
+          imgEl.classList.add('hidden');       // Esconde imagem
+          videoEl.classList.remove('hidden');  // Mostra vídeo
+          
+          videoSrc.src = data.video;           // Define a url do vídeo
+          videoEl.load();                      // Carrega o novo vídeo
+          videoEl.play();                      // Dá play (opcional, já que pus autoplay no HTML)
+      } else {
+          // Se NÃO tiver vídeo (usa a imagem):
+          videoEl.classList.add('hidden');     // Esconde vídeo
+          videoEl.pause();                     // Pausa o vídeo anterior para não ficar áudio no fundo
+          imgEl.classList.remove('hidden');    // Mostra imagem
+          
+          imgEl.src = data.img;                // Define a url da imagem
+      }
+
+      // Animação de abertura (igual ao anterior)
+      const overlay = document.getElementById('case-overlay');
+      const card = document.getElementById('case-card');
+      
+      overlay.style.visibility = 'visible';
+      gsap.to(overlay, { opacity: 1, duration: 0.4 });
+      gsap.fromTo(card, { y: 50, opacity: 0, scale: 0.95 }, { y: 0, opacity: 1, scale: 1, duration: 0.5, ease: "power4.out" });
+      document.body.style.overflow = 'hidden'; 
+  }
 
     function closeCase() {
         const overlay = document.getElementById('case-overlay');
@@ -667,35 +739,120 @@
     const serviceData = {
       '01': {
         title: "Estratégia e Planejamento",
-        text: "O planejamento é a base de tudo. Mergulho na identidade da sua marca para criar um roteiro claro de crescimento, definindo personas, tom de voz e canais.",
+        text: "O planejamento é a base de tudo. Mergulho na identidade da sua marca para criar um roteiro claro de crescimento, definindo personas, tom de voz e canais.<br><br>Por dois anos, atuei no planejamento, execução e coordenação das redes sociais de diferentes clientes, garantindo que a comunicação e o posicionamento de cada marca estivessem alinhados aos seus objetivos e aos relatórios mensais de performance.",
         cases: [
-          { img: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070", title: "Estratégia", desc: "??", url: "https://seulinkaqui.com" },
-          { img: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070", title: "Estratégia", desc: "??", url: "https://seulinkaqui.com" },
-          { img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070", title: "Planejamento", desc: "??", url: "https://seulinkaqui.com" }
+          { img: "./img/Clientes/mandala360_.jpg", title: "Mandala 360", desc: "Gestão completa de presença digital. Atuação do planejamento à execução, com foco em manter a narrativa da marca coerente e orientada por resultados reais de desempenho.", url:""},
+          { img: "./img/Clientes/crossfitpajucara.jpg", title: "Crossfit Pajuçara", desc: "Planejamento e coordenação de redes sociais. Foco total em alinhar a comunicação e o posicionamento da marca aos objetivos de negócio, garantindo consistência técnica e análise de performance.", url:"" },
+          { img: "./img/Clientes/thiagocadetecerimonial.jpg", title: "Thiago Cadete Cerimonial", desc: "Planejamento de redes sociais com foco em posicionamento real, garantindo que cada conteúdo cumpra os objetivos da marca e os indicadores de desempenho.", url:"" },
+          { img: "./img/Clientes/eusoutopfitness.jpg", title: "Top Fitness", desc: "Coordenação estratégica de redes sociais. Trabalho focado em posicionamento de marca e execução de conteúdo alinhados a metas de comunicação e relatórios de performance.", url:"" }
         ]
       },
       '02': {
-        title: "Social Media & Conteúdo",
-        text: "Gestão completa para que sua marca nunca fique em silêncio. Foco em engajamento orgânico, construção de comunidade e storytelling que converte.",
+        title: "Comunicação de Projetos",
+        text: "Planejamento e execução da comunicação de projetos pontuais, culturais e institucionais, atuando na organização das redes, produção de conteúdo e alinhamento da narrativa conforme o objetivo de cada iniciativa.",
         cases: [
-          { img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974", title: "Social Media", desc: "??", url: "https://seulinkaqui.com" },
-          { img: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1974", title: "Social Media", desc: "??", url: "https://seulinkaqui.com" }
+          { 
+            img: "./img/Clientes/ateliexicamanicongo.jpg",
+            title: "Ateliê Xica Manicongo",
+            desc: "Planejamento de comunicação, gestão de redes sociais, cobertura e conteúdo em tempo real.",
+            links: [
+                { label: "Instagram", url: "https://www.instagram.com/ateliexicamanicongo/" }
+            ]
+          },
+          { 
+            img: "./img/Clientes/reveillondoalto.jpg",
+            title: "Reveillon do Alto",
+            desc: "Cobertura de eventos, planejamento e produção de conteúdo real time, gestão das redes sociais.",
+            links: [
+                { label: "Instagram", url: "https://www.instagram.com/reveillondoalto/" }
+            ]
+          },
+          { 
+            img: "./img/Clientes/marta_arruda.jpg",
+            title: "Marta Arruda",
+            desc: "Produção de clipes, planejamento e execução de redes.",
+            links: [
+                { label: "Instagram", url: "https://www.instagram.com/marta_arruda/" }
+            ]
+          },
+          {
+            img: "./img/Clientes/casaaberta.al.jpg",
+            title: "Casa Aberta",
+            desc: "Organização da comunicação digital e estratégia de conteúdo, apoio direto à produção do evento.",
+            links: [
+                { label: "Instagram", url: "https://www.instagram.com/casaaberta.al/" }
+            ]
+          }
         ]
       },
       '03': {
         title: "Produção Audiovisual",
-        text: "Transformo ideias em experiências visuais. Produção focada no formato vertical (Reels/TikTok) e vídeos que prendem a atenção nos primeiros segundos.",
+        text: "Roteirização, captação mobile, direção de conteúdo e coordenação de produção para marcas, projetos culturais e eventos, com atuação em projetos como Solar Coca-Cola (Projeto Hortas Hidropônicas) e Mandala das Diversidades.",
         cases: [
-          { img: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071", title: "Projeto Marta Arruda", desc: "Produção de clipes, planejamento e execução de redes", url: "https://www.instagram.com/reel/DC5A0Tnv7KP/?igsh=eXNoNTRjMmRoOTJk" },
-          { img: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44c?q=80&w=2070", title: "Projeto x", desc: "Captação.", url: "" }
+          { 
+            img: "./img/Referências/Marta Arruda Vídeo.png", 
+            title: "Marta Arruda: 40 Anos de Esculturas", 
+            desc: "Produção de clipes, planejamento e execução de redes", 
+            links: [
+              { label: "Reels", url: "https://www.instagram.com/reel/DC5A0Tnv7KP/?igsh=eXNoNTRjMmRoOTJk" },
+              { label: "Reels", url: "https://www.instagram.com/reel/DBe3Ld5SCTn/" }
+            ]
+          },
+          { 
+            img: "./img/Referências/Mandala das Diversidades Mini Documentário.png", 
+            title: "Mandala das Diversidades", 
+            desc: "Produção, roteirização e coordenação do projeto", 
+            links: [
+              { label: "Mini Documentário", url: "https://www.youtube.com/watch?v=M5ymSk7lUP4" },
+              { label: "Reels", url: "https://www.instagram.com/reels/DSTHYGjj6nB/" }
+            ]
+          },
+          { 
+            img: "./img/Referências/Videocasts.png", 
+            title: "Videocasts", 
+            desc: "Edição de clipping para videocasts", 
+            links: [
+              { label: "Papo D - Cervejaria Deodora", url: "https://www.instagram.com/reels/DMyidbgxDzr/" },
+              { label: "PodMandala", url: "https://www.instagram.com/reels/DRCu4ZTDh66/" },
+              { label: "PodMandala", url: "https://www.instagram.com/reels/DRdForsAXq4/" },
+              { label: "PodMandala", url: "https://www.instagram.com/reels/DRRwwu1iKnw/" }
+            ]
+          }
         ]
       },
       '04': {
         title: "Eventos & Cobertura",
-        text: "Cobertura em tempo real para eventos que precisam transbordar do físico para o digital. Stories, edição 'on-the-go' e entrevistas.",
+        text: "Cobertura em tempo real de eventos, ativações e projetos presenciais, integrando comunicação online e offline, com experiências em iniciativas como Casa Aberta – Festival de Cultura e Acessibilidade e Ateliê Xica Manicongo.",
         cases: [
-          { img: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070", title: "Cobertura de Casamento", desc: "Cobertura completa.", url: "https://www.instagram.com/reel/DCrjCjLJTCu/?igsh=MWlydnp5NThtdTZycQ==" },
-          { img: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012", title: "Evento", desc: "Cobertura.", url: "https://seulinkaqui.com" }
+          { 
+            img: "./img/Referências/Bastidores.png", 
+            title: "BASTIDORES & PRESENÇA", 
+            desc: "Gosto de pôr a cara pro jogo. Além da técnica, trago a energia dos bastidores e a disposição de estar à frente da narrativa quando o projeto pede personalidade.", 
+            links: [
+              { label: "Bastidores", url: "https://www.instagram.com/reel/DTI6ECRDEnL/" },
+              { label: "Bastidores", url: "https://www.instagram.com/reels/DP1Py4uDc0-/" }
+            ]
+          },
+          { 
+            img: "./img/Referências/Ateliê Xica Manicongo.png", 
+            title: "II Ateliê Xica Manicongo de Cinema", 
+            desc: "Planejamento de comunicação, gestão de redes sociais, cobertura e conteúdo em tempo real.", 
+            links: [
+              { label: "Reels", url: "https://www.instagram.com/p/C_RxjJ-pgJU/" },
+              { label: "Evento", url: "https://www.instagram.com/p/C_jUN9QvVJr/" }
+            ]
+          },
+          { 
+            img: "./img/Referências/Casamento.png", 
+            title: "Casamentos e Cerimonialistas", 
+            desc: "Cobertura em tempo real para cerimonialistas e fornecedores. Captação mobile com olhar estético e entrega imediata, focada em valorizar o trabalho de quem faz o evento acontecer.", 
+            links: [
+              { label: "Day Barros Cerimonial", url: "https://www.instagram.com/reels/DEyKmvfJwMo/" },
+              { label: "Day Barros Cerimonial", url: "https://www.instagram.com/reels/DC4_sCBPEll/" },
+              { label: "Day Barros Cerimonial", url: "https://www.instagram.com/reels/DChQOMNp0ag/" },
+              { label: "Thiago Cadete Cerimonial", url: "https://www.instagram.com/reels/DCrjCjLJTCu/" }
+            ]
+          }
         ]
       }
     };
@@ -710,24 +867,34 @@
       const desktopFeedHtml = data.cases.map(c => `
         <div class="feed-card">
           <img src="${c.img}" class="feed-img" alt="Case">
-          <div>
-            <a href="${c.url}" target="_blank" class="text-white font-title text-sm uppercase tracking-wider hover:text-[#fafb00] transition-colors inline-block mb-1">
-                ${c.title}
-            </a>
-            <p class="text-white/50 text-xs mt-1">${c.desc}</p>
+          <div class="flex-1">
+            <h4 class="text-white font-title text-sm uppercase tracking-wider mb-1">${c.title}</h4>
+            <p class="text-white/50 text-xs mt-1 mb-4">${c.desc}</p>
+            <div class="flex flex-wrap gap-2">
+              ${c.links ? c.links.map(l => `
+                <a href="${l.url}" target="_blank" class="px-3 py-1 border border-white/20 rounded text-[9px] uppercase tracking-widest hover:bg-[#fafb00] hover:text-black hover:border-[#fafb00] transition-all">
+                  ${l.label}
+                </a>
+              `).join('') : ''}
+            </div>
           </div>
         </div>
       `).join('');
       
       // GERA HTML MOBILE (CLARO)
       const mobileFeedHtml = data.cases.map(c => `
-        <div class="feed-card-light">
-          <img src="${c.img}" class="feed-img" alt="Case">
-          <div>
-            <a href="${c.url}" target="_blank" class="text-black font-title text-sm uppercase tracking-wider hover:text-orange-500 transition-colors inline-block mb-1">
-                ${c.title}
-            </a>
-            <p class="text-gray-500 text-xs mt-1">${c.desc}</p>
+        <div class="feed-card-light flex-col items-start">
+          <div class="flex items-center gap-4 mb-3 w-full">
+              <img src="${c.img}" class="feed-img" alt="Case">
+              <h4 class="text-black font-title text-sm uppercase tracking-wider">${c.title}</h4>
+          </div>
+          <p class="text-gray-500 text-xs mb-4">${c.desc}</p>
+          <div class="flex flex-wrap gap-2">
+            ${c.links ? c.links.map(l => `
+              <a href="${l.url}" target="_blank" class="px-3 py-2 bg-black text-white rounded text-[9px] uppercase tracking-widest active:bg-orange-500 transition-all">
+                ${l.label}
+              </a>
+            `).join('') : ''}
           </div>
         </div>
       `).join('');
