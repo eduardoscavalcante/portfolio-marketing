@@ -4,10 +4,6 @@
 
 Este é um projeto de portfólio autoral desenvolvido para unir estética jornalística com animações modernas de interface. Focado em performance e narrativa visual.
 
-## 📸 Preview
-![Mockup do Portfólio](https://postimg.cc/ZvdR58Hp) 
-*(Dica: Tire um print do header e do setor de projetos e coloque aqui)*
-
 ## 🛠️ Tecnologias e Bibliotecas
 * **GSAP & ScrollTrigger:** Utilizados para a fluidez das camadas e modais.
 * **Tailwind CSS:** Estrutura de design system e responsividade.
